@@ -101,7 +101,9 @@ available_setting = {
     "plugin_trigger_prefix": "$",  # 规范插件提供聊天相关指令的前缀，建议不要和管理员指令前缀"#"冲突
     # 知识库平台配置
     "linkai_api_key": "",
-    "linkai_app_code": ""
+    "linkai_app_code": "",
+    # 配置配置
+    "system_prompt_path": ""
 }
 
 
@@ -169,7 +171,7 @@ def load_config():
         config_path = "./config-template.json"
 
     logger.info(f"使用配置：{config_path}")
-    
+
     config_str = read_file(config_path)
     logger.debug("[INIT] config str: {}".format(config_str))
 
