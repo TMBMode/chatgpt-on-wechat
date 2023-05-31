@@ -164,11 +164,12 @@ config = Config()
 
 def load_config():
     global config
-    config_path = "./config.json"
+    config_path = os.getenv("CONFIG_PATH") or "./config.json"
     if not os.path.exists(config_path):
-        logger.info("配置文件不存在，将使用config-template.json模板")
         config_path = "./config-template.json"
 
+    logger.info(f"使用配置：{config_path}")
+    
     config_str = read_file(config_path)
     logger.debug("[INIT] config str: {}".format(config_str))
 
