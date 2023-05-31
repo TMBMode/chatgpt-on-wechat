@@ -12,7 +12,7 @@ class Session(object):
             if (system_prompt_path != ""):
                 with open(system_prompt_path, "r") as prompt_file:
                     self.system_prompt = prompt_file.read()
-            else self.system_prompt = conf().get("character_desc", "")
+            else: self.system_prompt = conf().get("character_desc", "")
         else:
             self.system_prompt = system_prompt
 

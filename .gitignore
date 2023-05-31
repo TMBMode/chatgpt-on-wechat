@@ -25,3 +25,6 @@ plugins/**/
 !plugins/hello
 !plugins/role
 !plugins/keyword
+configs/*
+!configs/example.prompt
+!configs/example-config.json
