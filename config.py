@@ -104,7 +104,7 @@ available_setting = {
     "linkai_app_code": "",
     # 配置配置
     "system_prompt_path": "",
-    "message_tail"
+    "message_tail": ""
 }
 
 
