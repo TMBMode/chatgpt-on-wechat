@@ -1,3 +1,1 @@
-private fork for personal use
-
-see -> [zhayujie/chatgpt-on-wechat](https://github.com/zhayujie/chatgpt-on-wechat)
+### Use with [TMBMode/BotPanel](https://github.com/TMBMode/BotPanel)
